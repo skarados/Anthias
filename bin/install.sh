@@ -186,6 +186,8 @@ function set_device_type() {
         export DEVICE_TYPE="x86"
     elif grep -qF "Raspberry Pi 5" /proc/device-tree/model; then
         export DEVICE_TYPE="pi5"
+    elif grep -qF "Raspberry Pi Compute Module 5" /proc/device-tree/model; then
+        export DEVICE_TYPE="pi5"
     elif grep -qF "Raspberry Pi 4" /proc/device-tree/model; then
         export DEVICE_TYPE="pi4"
     elif grep -qF "Raspberry Pi 3" /proc/device-tree/model; then
