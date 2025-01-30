@@ -82,7 +82,7 @@ class VLCMediaPlayer(MediaPlayer):
 
     def __get_options(self):
         return [
-            f'--alsa-audio-device={self.get_alsa_audio_device()}',
+            f'--quiet',
         ]
 
     def set_asset(self, uri, duration):
